@@ -1,0 +1,342 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+:root {
+  --color-primary: #e4caff;
+  --color-secunday: #e2beee;
+  --title-color: #000;
+}
+.header__container {
+  background-image: url("../images/pexels-andrea-piacquadio-3757942.jpg");
+  background-position: bottom;
+  background-size: cover;
+  height: 35vh;
+  filter: opacity(90%);
+  background-attachment: fixed;
+  width: 100%;
+  opacity: 90%;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 80px;
+}
+.menu__bar {
+  display: none;
+}
+.logo__responsive {
+  display: none;
+}
+.nav-ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+.nav-li {
+  margin-right: 80px;
+}
+.nav-li a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #000;
+  font-size: 1.2rem;
+}
+/*Main*/
+
+.main__title {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 80px;
+}
+.main__container--title {
+  font-weight: 200;
+  letter-spacing: 3px;
+}
+
+.section__card {
+  width: 80%;
+  margin: 35px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card__img {
+  height: 280px;
+  opacity: 60%;
+  border-radius: 5px;
+}
+.card__paragraph {
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.section__masaje {
+  width: 100%;
+  padding: 90px 0;
+}
+.masaje__title {
+  width: 85%;
+  margin: auto;
+  text-align: left;
+  font-weight: 200;
+  font-size: 2rem;
+}
+.masaje__title1 {
+  font-weight: 300;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.grupo__titulos{
+  display: flex;
+  margin: auto;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+}
+.texto__add{
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+/*Sección titulos generales */
+.titulos__General{
+  font-weight: 400;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  color: #008EB4;
+}
+.parrafos__texto{
+  font-weight: 200;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.container__masajes {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.corp {
+  width: 45%;
+}
+.corp__img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+figure{
+  height: auto;
+}
+
+.section__Facial {
+  width: 100%;
+  padding: 90px 0;
+}
+
+.section__picture {
+  width: 100%;
+  height: 50vh;
+  opacity: 0.8;
+  background-image: url("../images/pexels-mikhail-nilov-6932440.jpg");
+  filter: brightness(80%);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+.footer {
+  width: 100%;
+  padding: 90px 0;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  background-image: url("../images/pexels-rodnae-productions-6724539.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  filter: brightness(50%);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+}
+
+.container__footer {
+  display: flex;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  gap: 30px;
+  color: #fff;
+}
+.footer__horarios {
+  flex-basis: 50%;
+  position: relative;
+}
+.footer__title {
+  letter-spacing: 1px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.footer__paragraph {
+  text-align: left;
+  width: 75%;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.footer__days {
+  display: block;
+  padding: 5px 0;
+}
+.footer__days i {
+  color: #fff;
+  margin-right: 10px;
+}
+.footer__contacto {
+  flex-basis: 50%;
+  position: relative;
+}
+.footer__titleC {
+  text-align: center;
+  margin-bottom: 70px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.container__social {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+.container__social i {
+  color: #fff;
+}
+
+
+.footer__copyright{
+  width: 100%;
+  background: #EAEAEA;
+}
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  font-size: .9rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 1060px) {
+  .header__container {
+    height: 20vh;
+  }
+  .masaje__title1{
+    margin-bottom: 1rem;
+  }
+  .grupo__titulos{
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  .texto__add{
+    font-size: 1.1rem;
+    margin-bottom: 1.3rem;
+  }
+  .logo__responsive a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  .section__card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .logo__responsive a {
+    font-size: 1.2rem;
+  }
+  .main__container--title {
+    font-size: 1.5rem;
+  }
+  .card__img {
+    width: 100%;
+  }
+  .section__card {
+    grid-template-columns: repeat(1, 270px);
+    justify-content: center;
+  }
+  .container__masajes {
+    flex-direction: column;
+  }
+  .corp {
+    width: 100%;
+  }
+ 
+  .cont__texts {
+    width: 90%;
+    padding: 20px;
+  }
+  .section__picture {
+    height: 40vh;
+  }
+
+  .container__footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer__horarios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: none;
+  }
+  .footer__paragraph {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__titleC {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .nav{
+    padding-top: 50px;
+    width: 80%;
+  }
+ .nav-li a{
+   font-size: .8rem;
+ }
+ .nav-li {
+  margin-right: 4rem;
+}
+.masaje__title1{
+  font-size: 2rem;
+}
+}
